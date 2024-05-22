@@ -5,8 +5,6 @@ function mostrar(){
     let Color= document.getElementById("Color")
     let Memoria= document.getElementById("Memoria")
     let Cantidad= document.getElementById("Cantidad")
-    let Boton= document.getElementById("Boton")
-    let Resultado= document.getElementById("result")
     console.log(Color.value)
     var Precio = 0
     var resultado = 0
