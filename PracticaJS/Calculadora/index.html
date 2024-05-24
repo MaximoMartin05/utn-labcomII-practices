@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora con JavaScript</title>
+<link type="text/css" href="/Calculadora/style.css" rel="stylesheet">
+<script src="/Calculadora/index.js"></script>
+</head>
+<body onload="init();">
+<table class="calculadora">
+<tr>
+<td colspan="4"><span id="resultado"></span></td>
+</tr>
+<tr>
+<td><button id="siete" onclick="siete()">7</button></td>
+<td><button id="ocho" onclick="ocho()">8</button></td>
+<td><button id="nueve" onclick="nueve()">9</button></td>
+<td><button id="division" onclick="division()">/</button></td>
+</tr>
+<tr>
+<td><button id="cuatro" onclick="cuatro()">4</button></td>
+<td><button id="cinco" onclick="cinco()">5</button></td>
+<td><button id="seis" onclick="seis()">6</button></td>
+<td><button id="multiplicacion" onclick="multiplicar()">*</button></td>
+</tr>
+<tr>
+<td><button id="uno" value="1" onclick="uno()">1</button></td>
+<td><button id="dos" onclick="dos()">2</button></td>
+<td><button id="tres" onclick="tres()">3</button></td>
+<td><button id="resta" onclick="resta()">-</button></td>
+</tr>
+<tr>
+<td><button id="igual" onclick="calcular()">=</button></td>
+<td><button id="reset" onclick="reset()">C</button></td>
+<td><button id="cero" onclick="cero()">0</button></td>
+<td><button id="suma" onclick="suma()">+</button></td>
+</tr>
+<tr>
+<td colspan="4"><span id="creditos">TUP</span></td>
+</tr>
+</table>
+<script src="funcionalidad.js"></script>
+</body>
+</html>
