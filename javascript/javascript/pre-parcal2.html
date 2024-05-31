@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="product-image">
+           <img id="productImage" class="productImage" src="celDefault.jpg"> 
+        </div>
+        <div id="fondo" class="product-details">
+            <div class="product-details-content">
+                <h2 id="">Celulares</h2>
+                <form action="">
+                    <div class="form-control">
+                        <label>Color</label>
+                        <select onchange="changeColor()"  id="colorSelector">
+                            <option disabled selected value="0"> -- Seleccione una
+                                opción -- </option>
+                            <option value="grafito" id="grafito">Grafito</option>
+                            <option value="sierra">Sierra</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Capacidad</label>
+                        <select onchange="changeProductImage()" id="capacidadSelector">
+                            <option disabled selected value="0"> -- Seleccione una
+                                opción -- </option>
+                            <option value="128">128 GB</option>
+                            <option value="256">256 GB</option>
+                            <option value="512"> 512 GB</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Cantidad</label>
+                        <input type="text" value="0" id="cantidad" />
+                    </div>
+                    <div class="form-control">
+                        <button type="button" onclick="calculatePrice()">Cotizar</button>
+                        <button type="button" onclick="limpiar()">Limpiar</button>
+                       
+                    </div>
+                    <div id="result" class="form-control">
+                        Resultado cotización o error
+                    </div>
+                    <div id="result1" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

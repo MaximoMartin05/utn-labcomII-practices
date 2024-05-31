@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js Practica Adicional/Ejercicio 3/index.js"></script>
+</head>
+<!-- onload="pedir()" -->
+<body> 
+    
+    <form action="">
+
+        <input type="text" id="nombre" name="nombre">
+        <input type="number" onchange="maximo()" id="cantPreguntas" name="cantPreguntas">
+        <input type="number" onchange="validar()" id="cantCorrectas" name="cantCorrectas" min="0" max="10">
+
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+
+    <h1 id="mostrar"></h1>
+</body>
+</html>
